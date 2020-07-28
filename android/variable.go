@@ -1,4 +1,4 @@
-// Copyright 2015 Google Inc. All rights reserved.
+ // Copyright 2015 Google Inc. All rights reserved.
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
 // you may not use this file except in compliance with the License.
@@ -20,7 +20,7 @@ import (
 	"runtime"
 	"strings"
 
-	"gzosp/soong/android"
+	"narvis/soong/android"
 
 	"github.com/google/blueprint/proptools"
 )
@@ -127,8 +127,8 @@ type variableProperties struct {
 			Srcs         []string
 		}
 
-		// include Gzosp variables
-		Gzosp android.Product_variables
+		// include Narvis variables
+		Narvis android.Product_variables
 	} `android:"arch_variant"`
 }
 
@@ -293,8 +293,8 @@ type productVariables struct {
 
 	TargetFSConfigGen []string `json:",omitempty"`
 
-	// include Gzosp variables
-	Gzosp android.ProductVariables
+	// include Narvis variables
+	Narvis android.ProductVariables
 }
 
 func boolPtr(v bool) *bool {
